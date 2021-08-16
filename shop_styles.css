@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+/* navbar bro */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: gray;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.nav-links li a {
+  color: black;
+  padding: 20px;
+  transition: all 3s linear;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  background-color: turquoise;
+}
+
+#Landing {
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(250, 248, 249, 0.426),
+      rgba(255, 254, 254, 0.3)
+    ),
+    url(https://picsum.photos/900/500);
+  background-size: cover;
+  /* background-position: center; */
+  display: grid;
+  place-items: center;
+}
+
+#Landing h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* about page */
+
+#about {
+  display: flex;
+}
+
+.aboutus,
+.about-image {
+  width: 50%;
+}
+
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  gap: 20px;
+}
+
+.about-image {
+  object-fit: contain;
+  width: 300px;
+  height: 489px;
+}
+
+/* products container */
+
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 15px;
+}
+
+.products {
+  width: 300px;
+  object-fit: contain;
+  background: rgba(7, 7, 119, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  margin: 20px;
+}

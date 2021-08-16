@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login-screen">
+        <div class="app-title">
+          <h1>Register</h1>
+        </div>
+
+        <div class="register">
+          <form
+            action="https://immense-lake-69588.herokuapp.com/register/"
+            method="POST"
+            class="register-form"
+          >
+            <!-- first_name -->
+            <div class="register-div">
+              <label class="register-info" for="first_name"></label>
+              <input
+                class="register-input"
+                type="text"
+                name="first_name"
+                required
+                placeholder="Name"
+              />
+            </div>
+
+            <!-- last_name -->
+            <div class="register-div">
+              <label class="register-info" for="last_name"></label>
+              <input
+                class="register-input"
+                type="text"
+                name="last_name"
+                required
+                placeholder="Surname"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="register-div">
+              <label class="register-info" for="email"></label>
+              <input
+                class="register-input"
+                type="text"
+                name="email"
+                required
+                placeholder="Email"
+              />
+            </div>
+
+            <!-- username -->
+            <div class="register-div">
+              <label class="register-info" for="username"> </label>
+              <input
+                class="register-input"
+                type="text"
+                name="username"
+                required
+                placeholder="Username"
+              />
+            </div>
+
+            <!-- password -->
+            <div class="register-div">
+              <label class="register-info" for="password"> </label>
+              <input
+                class="register-input"
+                type="password"
+                name="password"
+                required
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="buttons">
+              <button class="register-change btn">
+                Submit
+              </button>
+          </form>
+          <!-- buttons -->
+        </div>
+      </div>
+    </div>
+    <script src="./register.js"></script>
+  </body>
+</html>
