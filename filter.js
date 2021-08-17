@@ -24,11 +24,19 @@ function renderproducts(products) {
         <h3 class="product-price">${product[3]}</h3>
         <button onclick="deleteProduct(${product[0]})">delete</button>
         <button onclick="toCart(${product[0]})">Cart</button>
-        <button onclick="add(${product[0]})">Edit</button>
+        <button onclick="add()">add</button>
 
       </div>
     `;
   });
+}
+
+function add() {
+  window.location.href = "./adding.html";
+}
+
+function back() {
+  window.location.href = "./post.html";
 }
 
 // add to cart function
@@ -79,7 +87,7 @@ function deleteProduct(index) {
 //           old_container.innerHTML = `<div class="item">
 //            <p class="product-name">Name: ${product[1]}</p>
 //            <p class="product-price">Price: ${product[2]}</p>
-//            <p class="product-date">Date: ${product[3]}</p> 
+//            <p class="product-date">Date: ${product[3]}</p>
 //        </div>`;
 //         });
 //       }
